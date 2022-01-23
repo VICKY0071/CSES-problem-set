@@ -9,16 +9,16 @@ int32_t main(){
     for(int i = 0;i<n;i++){
         cin >> a[i];
     }
-    set<int> st;
-    int res = 0;
-    for(int i = n - 1;i >= 0;i--){
-        if(st.count(a[i]) == 0){
-            st.insert(a[i]);
-            auto x = st.find(a[i]);
-            st.erase(st.begin(), x);
-            res = max(res, (int)st.size());
+    vector<int> lis;
+    for(int i = 0;i<n;i++){
+        auto x = lower_bound(lis.begin(), lis.end(), a[i]);
+        if(x == lis.end()){
+            lis.push_back(a[i]);
+        }
+        else{
+            *x = a[i];
         }
     }
-    cout <<res<<endl;
+    cout <<lis.size()<<endl;
     return 0;
 }
