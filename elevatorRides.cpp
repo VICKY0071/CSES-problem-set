@@ -11,11 +11,22 @@ int main(){
     int v = -1;
     int x;
     int cnt=  0;
+    if(n == 1){  
+        cout <<1<<endl;
+        return 0;
+    }
     while(!a.empty()){
-        if(v == -1) v = a.back();
+        // cout <<v<<endl;
+        if(v == -1){
+            v = a.back();
+        }
         x = k - v;
         auto ptr = lower_bound(a.begin(), a.end(), x);
-        if(*ptr == x && (ptr - a.begin() != a.size() - 1)){
+        if(ptr == a.end()){
+            ptr--;
+            ptr--;
+        }
+        if(*ptr == x){
             a.erase(ptr);
             a.pop_back();
             v = -1;
@@ -33,6 +44,8 @@ int main(){
                 a.erase(ptr);
             }
         }
+        // for(int i : a)   cout <<i<<' ';
+        // cout <<endl;
     }
     cout <<cnt<<endl;
     return 0;
