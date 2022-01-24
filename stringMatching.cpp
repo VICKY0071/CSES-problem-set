@@ -10,7 +10,7 @@ int main(){
     int k[n] = {0};
     for(int i = 1, l = 0, r = 0;i < n;i++){
         if(i <= r){
-            k[i] = min(r - i + 1, k[i - 1]);
+            k[i] = min(r - i + 1, k[i - l]);
         }
         while(i + k[i] < n && t[k[i]] == t[i + k[i]])   k[i]++;
         if(i + k[i] - 1 > r){
