@@ -9,3 +9,7 @@
 3. Complete the Sum Of Four Values problem..
 <input type="radio" id="html" name="fav_language" value="HTML"> Yes
 <input type="radio" id="html" name="fav_language" value="HTML" checked> No
+
+3. Complete the Money Sums problem..
+<input type="radio" id="html" name="fav_language" value="HTML"> Yes
+<input type="radio" id="html" name="fav_language" value="HTML" checked> No
