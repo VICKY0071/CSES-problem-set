@@ -13,3 +13,7 @@
 3. Complete the Money Sums problem..
 <input type="radio" id="html" name="fav_language" value="HTML"> Yes
 <input type="radio" id="html" name="fav_language" value="HTML" checked> No
+
+3. Complete the Sliding Median problem..
+<input type="radio" id="html" name="fav_language" value="HTML"> Yes
+<input type="radio" id="html" name="fav_language" value="HTML" checked> No

@@ -10,7 +10,6 @@ int getMax(int n){
     }
     return mx;
 }
-
 int main(){
     int n;
     cin >> n;
