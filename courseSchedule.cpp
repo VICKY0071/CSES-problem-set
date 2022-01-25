@@ -6,6 +6,7 @@ int cycle_start = -1;
 int cycle_end;
 int colors[100001];
 stack<int> st;
+
 bool dfs(vector<vector<int>>& a, int i){
     colors[i] = 1;
     for(auto e : a[i]){
