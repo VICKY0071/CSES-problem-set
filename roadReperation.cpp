@@ -33,7 +33,6 @@ int32_t main(){
     for(int i = 0;i<m;i++){
         int u, v, w;
         cin >> u >> v >> w;
-        
         u--, v--;
         a[i] = {u, v, w};
     }
